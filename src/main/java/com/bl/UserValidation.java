@@ -19,7 +19,7 @@ public class UserValidation {
         }else{
             System.out.println(" Not Matched ");
         }
-
+        System.out.println();
 
         return pattern;
     }
