@@ -23,4 +23,26 @@ public class UserValidation {
 
         return pattern;
     }
+
+
+    public static String lastName(String lastName){
+
+
+
+        String pattern= "^[A-z]{3,}";
+        Pattern r= Pattern.compile(pattern);
+
+        Matcher m = r.matcher(lastName);
+
+
+        if(m.matches()){
+            System.out.println(" Last Name Matched Pattern:" );
+
+        }else
+        {
+            System.out.println("Last Name  No Matched :");
+        }
+
+        return pattern;
+    }
 }

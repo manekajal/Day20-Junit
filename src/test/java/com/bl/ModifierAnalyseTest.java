@@ -13,5 +13,11 @@ public class ModifierAnalyseTest {
         UserValidation valid = new UserValidation();
         String result = valid.firstName("Kajal");
         Assert.assertEquals(true, result);
+    }@Test
+    public void lastName(){
+        UserValidation valid = new UserValidation();
+        String result = valid.lastName("mane");
+        Assert.assertEquals(true, result);
     }
+
 }
