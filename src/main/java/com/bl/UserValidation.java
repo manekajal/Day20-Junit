@@ -74,5 +74,24 @@ public class UserValidation
         }
         return pattern;
     }
+    public static String password(String str)
+    {
+
+        String pattern = "\"(?=.*?[A-Z])(?=.*?[0-9])[A-Za-z]{8,}";
+        Pattern r= Pattern.compile(pattern);
+
+        Matcher m;
+        m = r.matcher(str);
+
+        if(m.matches()){
+            System.out.println(" password is Matched :" );
+
+        }else
+        {
+            System.out.println("  password is Not Matched :");
+        }
+        return pattern;
+    }
+
 
 }

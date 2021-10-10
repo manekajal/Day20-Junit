@@ -30,4 +30,10 @@ public class UserValidationTest {
         String result=valid.email("manekajal2014@gmail.com");
         Assert.assertEquals(true, valid);
     }
+    @Test
+    public void password(){
+        UserValidation valid = new UserValidation();
+        String result=valid.password("manekajal2014@gmail.com");
+        Assert.assertEquals(true, valid);
+    }
 }
