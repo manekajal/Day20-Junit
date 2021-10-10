@@ -24,4 +24,10 @@ public class UserValidationTest {
         String result=valid.mobileNumber("91 9765326068");
         Assert.assertEquals(true, valid);
     }
+    @Test
+    public void email(){
+        UserValidation valid = new UserValidation();
+        String result=valid.email("manekajal2014@gmail.com");
+        Assert.assertEquals(true, valid);
+    }
 }

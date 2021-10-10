@@ -56,4 +56,23 @@ public class UserValidation
         }
         return pattern;
     }
+    public static String email(String str)
+    {
+
+        String pattern = "^[a-zA-Z0-9+_.-]+@[a-zA-Z0-9.-]+$";
+        Pattern r= Pattern.compile(pattern);
+
+        Matcher m;
+        m = r.matcher(str);
+
+        if(m.matches()){
+            System.out.println(" Email is Matched :" );
+
+        }else
+        {
+            System.out.println("  Email is Not Matched :");
+        }
+        return pattern;
+    }
+
 }
